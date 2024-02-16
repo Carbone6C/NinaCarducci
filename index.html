@@ -11,9 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+        rel="stylesheet"
+    /></noscript>
     <meta charset="UTF-8" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -106,6 +113,8 @@
       </nav>
       <div id="header">
         <div
+          width="1920"
+          height="1080"
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
@@ -135,13 +144,18 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
+                width="3088"
+                height="auto"
                 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
                 class="d-block w-100"
                 alt="Man Walking"
+                loading="eager"
               />
             </div>
             <div class="carousel-item">
               <img
+                width="1980"
+                height="916"
                 src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
                 class="d-block w-100"
                 alt="Crowd Ceering"
@@ -150,6 +164,8 @@
             </div>
             <div class="carousel-item">
               <img
+                width="1920"
+                height="888"
                 src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-compressed.webp"
                 class="d-block w-100"
                 alt="Marriage kiss"
@@ -378,7 +394,7 @@
         </div>
       </div>
     </footer>
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" defer />
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -386,7 +402,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
   </body>
 </html>

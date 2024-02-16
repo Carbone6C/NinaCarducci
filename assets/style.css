@@ -356,3 +356,6 @@ input[type="submit"] {
 	}
 }
 
+img {
+	aspect-ratio: attr(width) / attr(height) ;
+}
